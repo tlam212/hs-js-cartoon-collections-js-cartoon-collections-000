@@ -15,6 +15,7 @@ function longPlaneteerCalls(words) {
   let result = words.some(function(word){
     return word.length > 4;
   }); 
+  
   return result;
 }
 
@@ -24,11 +25,12 @@ function findTheCheese (foods) {
     food === "gouda" ||
     food === "Camembert";
   });
+
   if(result.length !== 0) {
     return result;
   }else{
     return "no cheese!";
   }
-}
 
+} 
 
