@@ -1,6 +1,6 @@
 function dwarfRollCall(dwarves) {
   let dwarfNames = [];
-  for (let i = 0; i < 0.5*dwarves.length; i++) {
+  for (let i = 0.5*dwarves.length; i < dwarves.length; i++) {
     dwarfNames.push(`${i+1}. ${dwarves[i]} `); 
   }
    return dwarfNames.join("");
