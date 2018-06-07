@@ -23,10 +23,11 @@ function longPlaneteerCalls(words) {
 // findTheCheese(['bananas', 'cheddar', 'gouda', 'pineapple'])
 
 function findTheCheese (foods) {
-  let result = foods.filter(function(food){
+  let result = foods.find(function(food){
     return food === "cheddar" ||
     food === "gouda" ||
-    food === "Camembert";
+    food === "Camembert" ||
+    food === "swiss";
   });
 
   if(result.length !== 0) {
@@ -36,4 +37,11 @@ function findTheCheese (foods) {
   }
 
 } 
+
+function wordsThatStartWithB(words){
+  
+}
+
+// wordsThatStartWithB(['bob', 'brian', 'sally']) => ['bob', brian]
+// wordsThatStartWithB(['billy', 'jane', 'susanne']) => ['billy']
 
