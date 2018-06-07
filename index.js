@@ -39,8 +39,14 @@ function findTheCheese (foods) {
 } 
 
 function wordsThatStartWithB(words){
-  let result = words.filter()
+  let result = words.filter(function(word){
+    return word.startsWith('b');
+  })
+  return result;
 }
+
+//'bob'.startsWith("b") => true
+// 'sally'.startsWith("b") => false
 
 // wordsThatStartWithB(['bob', 'brian', 'sally']) => ['bob', brian]
 // wordsThatStartWithB(['billy', 'jane', 'susanne']) => ['billy']
