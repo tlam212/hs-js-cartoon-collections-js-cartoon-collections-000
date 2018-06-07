@@ -19,6 +19,9 @@ function longPlaneteerCalls(words) {
   return result;
 }
 
+// findTheCheese([ 'apple', 'cherry', 'gouda'])
+// findTheCheese(['bananas', 'cheddar', 'gouda', 'pineapple'])
+
 function findTheCheese (foods) {
   let result = foods.filter(function(food){
     return food === "cheddar" ||
@@ -31,16 +34,6 @@ function findTheCheese (foods) {
   }else{
     return "no cheese!";
   }
-<<<<<<< HEAD
-=======
-
-} 
-if(result.length !==0){
-  return result;
-}else{
-  return "no cheese";
-}
->>>>>>> a50ab0f4c7c2db9fd5d8a80e53eac3f64c9bfb80
 
 } 
 
